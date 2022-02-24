@@ -1,2 +1,2 @@
 # Alpro-A1
-Givandra Haikal Adjie - 24060121130051
+Zidan Rafindra Utomo - 24060121130051
