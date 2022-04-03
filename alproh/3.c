@@ -5,24 +5,24 @@
 */
 #include <stdio.h>
 
-int main(){
-// kamus
-    float m,v,r,f;
+int main() {
+    // kamus
+    float m, v, r, f;
 
-// Algoritma
+    // Algoritma
     //input
     printf("Masukkan nilai m: ");
-    scanf("%f", &m);
+    scanf("%f", & m);
     printf("Masukkan nilai v: ");
-    scanf("%f", &v);
+    scanf("%f", & v);
     printf("Masukkan nilai r: ");
-    scanf("%f", &r);
-    
+    scanf("%f", & r);
+
     //proses
-    f = m * (v*v)/r;
-    
+    f = m * (v * v) / r;
+
     // output
     printf("f: %f", f);
-    
+
     return 0;
 }
