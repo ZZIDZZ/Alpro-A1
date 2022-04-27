@@ -7,21 +7,22 @@
 
 int main(){
 // kamus
-    int N, i,j;
-    
+    int N, i, c,j;
 // Algoritma
     //input
     scanf("%d",&N);
-    
+    c = 0;
     //proses
-    for(i=0;i<N;i++){
-        for(j=0;j<i;j++){
-            printf(" ");
+    for(i=2;i<N;i++){
+        for(j=2;j<i;j++){
+            if(i % j == 0){
+                c = 1;
+            }
         }
-        for(j=N-i;j>0;j--){
-            printf("* ");
+        if (c == 0){
+            printf("%d\n", i);
         }
-        printf("\n");
+        c = 0;
     }
     return 0;
 }
