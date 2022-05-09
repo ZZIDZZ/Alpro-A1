@@ -9,7 +9,7 @@ int binarySearch(int arr[], int n, int x){
         tengah = bawah + (atas - bawah) / 2;
         printf("arr[tengah]: %d\n", arr[tengah]);
         printf("bawah: %d\ntengah: %d\natas: %d\n\n",\
-        bawah,tengah,atas);
+        bawah+1,tengah+1,atas+1);
         // cek apakah x ada di tengah
         if (arr[tengah] == x){
             printf("arr[tengah] == x\n");
@@ -34,12 +34,19 @@ int main(void){
 // kamus
     int arr[] = {2, 4, 8, 15, 23, 45, 50, 52, 60, 64, 71, 75, 77, 83, 89, 90, 99, 100, 121, 134, 140, 142, 149, 150, 158, 162, 173, 180, 191, 195, 200};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int x = 60;
+    for(int i = 0; i < n; i++){
+        printf("%d", arr[i]);
+        if(i != n-1){
+            printf(", ");
+        }
+    }
+    printf("\n");
+    int x = 158;
 // Algoritma
     //input
     int result = binarySearch(arr, n, x);
     if(result!=-1){
-        printf("Elemen %d ditemukan pada index %d\n",x, result);
+        printf("Elemen %d ditemukan pada index %d\n",x, result+1);
     } else printf("Elemen %d tidak ditemukan\n",x);
     return 0;
 }
